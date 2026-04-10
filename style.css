@@ -1,0 +1,131 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Manrope";
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+} /*Fuente de Google*/
+
+.titulo-proyectos,
+.titulo-proyectosventa {
+  color: #001d3d;
+  font-size: 2rem;
+} /*Definicion tamaño de letra y color*/
+
+.titulo {
+  font-family: "Manrope";
+  color: #001d3d;
+  font-size: 50px;
+  position: absolute;
+  left: 20px;
+  top: 400px;
+  background-color: #ffd60a;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  height: 4rem;
+  background-color: #001d3d;
+  font-family: "Manrope";
+  position: absolute;
+  left: 1250px;
+  top: 30px;
+  border-radius: 10px;
+}
+
+.fondo-principal img {
+  width: 100%;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-size: 15px;
+}
+
+.menu a {
+  color: white;
+}
+.menu a:hover {
+  color: #ffd60a;
+}
+
+.edificios {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffd60a;
+}
+
+.edificios h2 {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  color: #001d3d;
+}
+.edificios div {
+  padding: 30px;
+}
+.edificios img {
+  height: 300px;
+  border-radius: 20px;
+  -webkit-box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+} /*Sombre de las imágenes*/
+
+.section-proyectoventa {
+  display: flex;
+  justify-content: space-around;
+  background-color: #001d3d;
+  color: #ffd60a;
+}
+.section-proyectoventa div > img {
+  height: 300px;
+  border-radius: 20px;
+  -webkit-box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+}
+.section-formulario {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.formulario {
+  background-color: #001d3d;
+  color: #ffd60a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  height: 400px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.formulario input {
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+}
+.boton-formulario {
+  align-self: center;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.boton-formulario:hover {
+  background-color: #ffd60a;
+  color: #001d3d;
+}
