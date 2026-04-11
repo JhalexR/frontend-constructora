@@ -1,4 +1,16 @@
-const servicio = document.getElementById("servicio");
+// Hero
+
+function whatsapp() {
+  const numero = "573245082990"; // tu número
+  const mensaje =
+    "Hola, quiero información sobre sus servicios de construcción";
+  window.open(
+    `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`,
+    "_blank",
+  );
+}
+//
+servicio = document.getElementById("servicio");
 const tipoProyectoDiv = document.getElementById("tipoProyectoDiv");
 const areaDiv = document.getElementById("areaDiv");
 const form = document.getElementById("formConstructora");
@@ -46,3 +58,32 @@ form.addEventListener("submit", function (e) {
   tipoProyectoDiv.classList.add("hidden");
   areaDiv.classList.add("hidden");
 });
+
+let index = 0;
+const slides = document.getElementById("slides");
+const totalSlides = document.querySelectorAll(".slide");
+
+function actualizarCarrusel() {
+  slides.style.transform = `translateX(-${index * 100}%)`;
+
+  totalSlides.forEach((slide) => slide.classList.remove("activo"));
+  totalSlides[index].classList.add("activo");
+}
+
+function mover(direccion) {
+  index += direccion;
+
+  if (index < 0) index = totalSlides.length - 1;
+  if (index >= totalSlides.length) index = 0;
+
+  actualizarCarrusel();
+}
+
+function contactar() {
+  alert("Te redirigiremos a contacto (puedes conectar WhatsApp aquí)");
+}
+
+// Auto-play
+setInterval(() => {
+  mover(1);
+}, 4000);

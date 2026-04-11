@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,75 +14,114 @@
   </head>
 
   <body>
-    <section class="fondo-principal">
-      <!--Sección bienvenida-->
+    <!--  <section class="fondo-principal">
+      <!--Sección bienvenida
       <h1 class="titulo">Constructora El Progreso by Camily Hermosilla</h1>
       <img
         src="https://media1.amarilo.com.co/website/s3fs-public/2023-08/El-cambio-es-Amarilo-1-1170x686.jpg"
         alt=""
       />
       <nav class="nav">
-        <!--Navbar-->
+        Navbar
         <ul class="menu">
-          <!--Menu de navegacion-->
+          <!--Menu de navegacion
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Proyectos</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
-    </section>
+    </section>  -->
 
-    <h2 class="titulo-proyectos">Proyectos</h2>
-    <span> </span>
-    <section class="edificios">
-      <!--Sección de edificios-->
-      <div class="edificio-1">
-        <h2>Edificio Central</h2>
-        <img
-          src="https://i.pinimg.com/originals/b4/ee/e2/b4eee26494fae2af4e37dbad9ec2082c.jpg"
-          alt=""
-        />
-      </div>
+    <!--Hero-->
+    <section class="hero">
+      <div class="overlay"></div>
 
-      <div class="edificio-2">
-        <h2>Conjunto Residencial</h2>
-        <img
-          src="https://media1.amarilo.com.co/website/s3fs-public/blog/2023-03/Conjunto-Residencial-Lago-Alto.-Barranquilla.jpg"
-          alt=""
-        />
-      </div>
+      <div class="contenido">
+        <h1>Construimos el futuro que imaginas</h1>
+        <p>
+          Diseño, construcción y remodelación con altos estándares de calidad.
+        </p>
 
-      <div class="edificio-3">
-        <h2>Centro Comercial</h2>
-        <img
-          src="https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP4315133-h-o.webp"
-          alt=""
-        />
+        <div class="botones">
+          <button class="btn-primary" onclick="whatsapp()">Contáctanos</button>
+          <button class="btn-secondary">Ver proyectos</button>
+        </div>
       </div>
     </section>
+    <!--Proyectos mejorado-->
+    <section class="proyectos">
+      <h2>Nuestros Proyectos</h2>
 
-    <h2 class="titulo-proyectoventa">Proyectos en venta</h2>
-    <!--Sección de Proyectos en Venta-->
-    <section class="section-proyectoventa">
-      <div class="edificio-1">
-        <h2>Edificio Central</h2>
-        <img
-          src="https://i.pinimg.com/originals/b4/ee/e2/b4eee26494fae2af4e37dbad9ec2082c.jpg"
-          alt=""
-        />
-        <p>Precio: 1.000.000</p>
-      </div>
+      <div class="grid">
+        <div class="card">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_2X_897120-MCO95840645023_102025-N.webp"
+          />
+          <div class="overlay">
+            <h3>Proyecto Residencial</h3>
+            <p>Construcción de vivienda moderna</p>
+            <button>Ver más</button>
+          </div>
+        </div>
 
-      <div class="edificio-2">
-        <h2>Conjunto Residencial</h2>
-        <img
-          src="https://media1.amarilo.com.co/website/s3fs-public/blog/2023-03/Conjunto-Residencial-Lago-Alto.-Barranquilla.jpg"
-          alt=""
-        />
-        <p>Precio: 80.000</p>
+        <div class="card">
+          <img
+            src="https://img.freepik.com/fotos-premium/ingenieros-arquitectos-asiaticos-colaborando-proyecto-construccion-moderna-al-atardecer_62294-5291.jpg?semt=ais_rp_progressive&w=740&q=80"
+          />
+          <div class="overlay">
+            <h3>Edificio Corporativo</h3>
+            <p>Diseño y ejecución</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://arquitectura.medellin.unal.edu.co/escuelas/habitat/galeria/albums/Cehap/MedellinMarcadas2/normal_DSC06519_28Copiar29.JPG"
+          />
+          <div class="overlay">
+            <h3>Remodelación</h3>
+            <p>Transformación de espacios</p>
+            <button>Ver más</button>
+          </div>
+        </div>
       </div>
     </section>
+    <!--Sección Carrusel-->
+    <div class="carrusel">
+      <div class="slides" id="slides">
+        <div class="slide activo">
+          <img src="/src/car1.jpg" />
+          <div class="contenido">
+            <h2>Construimos tus sueños</h2>
+            <p>Proyectos modernos y seguros para tu familia.</p>
+            <button onclick="contactar()">Contáctanos</button>
+          </div>
+        </div>
 
+        <div class="slide">
+          <img src="https://picsum.photos/id/1015/1200/400" />
+          <div class="contenido">
+            <h2>Remodelamos tu espacio</h2>
+            <p>Transformamos ideas en realidad.</p>
+            <button onclick="contactar()">Solicitar asesoría</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://picsum.photos/id/1019/1200/400" />
+          <div class="contenido">
+            <h2>Calidad garantizada</h2>
+            <p>Más de 10 años de experiencia.</p>
+            <button onclick="contactar()">Ver proyectos</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn prev" onclick="mover(-1)">❮</button>
+      <button class="btn next" onclick="mover(1)">❯</button>
+    </div>
+    <!--Formulario de cotización-->
     <section class="formulario-cotizacion">
       <div class="form-container">
         <h2>Contáctanos</h2>
@@ -93,7 +132,7 @@
 
           <label>Correo</label>
           <input type="email" id="correo" required />
-
+          <!--Campo de tipo de servicio-->
           <label>Tipo de servicio</label>
           <select id="servicio" required>
             <option value="">Seleccione</option>
@@ -102,7 +141,7 @@
             <option value="cotizacion">Cotización</option>
           </select>
 
-          <!-- Campo condicional -->
+          <!-- Campo tipo de proyecto -->
           <div id="tipoProyectoDiv" class="hidden">
             <label>Tipo de proyecto</label>
             <select id="tipoProyecto">
@@ -113,7 +152,7 @@
             </select>
           </div>
 
-          <!-- Campo adicional -->
+          <!-- Campo área aproximada< -->
           <div id="areaDiv" class="hidden">
             <label>Área aproximada (m²)</label>
             <input type="number" id="area" />
@@ -128,6 +167,7 @@
         <p id="respuesta"></p>
       </div>
     </section>
+
     <script src="js.js"></script>
   </body>
 </html>
