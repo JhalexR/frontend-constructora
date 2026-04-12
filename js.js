@@ -122,3 +122,24 @@ function contactar() {
 setInterval(() => {
   mover(1);
 }, 4000);
+
+const filtroEstado = document.getElementById("filtroEstado");
+const filtroCiudad = document.getElementById("filtroCiudad");
+const filtroTipo = document.getElementById("filtroTipo");
+const contenedorResultados = document.getElementById("resultados");
+
+function filtrarProyectos() {
+  const estado = filtroEstado.value;
+  const ciudad = filtroCiudad.value;
+  const tipo = filtroTipo.value;
+
+  const filtrados = proyectos.filter(p => {
+    return (
+      (!estado || p.estado === estado) &&
+      (!ciudad || p.ciudad === ciudad) &&
+      (!tipo || p.tipo === tipo)
+    );
+  });
+
+  mostrarResultados(filtrados);
+}
